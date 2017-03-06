@@ -42,6 +42,11 @@ suseConfig
 suseImportBuildKey
 
 #======================================
+# Containers-specific setup
+#--------------------------------------
+echo "ttyS0" >> /etc/securetty
+
+#======================================
 # Umount kernel filesystems
 #--------------------------------------
 baseCleanMount
