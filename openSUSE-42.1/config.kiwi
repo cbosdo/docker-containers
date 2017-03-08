@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.1" name="openSUSE-42.1-docker-guest">
+<image schemaversion="6.1" name="openSUSE-42.1-syscontainer-guest">
   <description type="system">
     <author>Flavio Castelli</author>
     <contact>fcastelli@suse.com</contact>
-    <specification>openSUSE 42.1 docker container</specification>
+    <specification>openSUSE 42.1 system container</specification>
   </description>
   <preferences>
     <type image="docker" container="os421">
@@ -33,6 +33,8 @@
     <package name="ca-certificates-mozilla"/>
     <package name="coreutils"/>
     <package name="iputils"/>
+    <package name="wicked"/>
+    <package name="sysconfig-netconfig"/>
     <package name="openSUSE-build-key"/>
     <package name="openSUSE-release"/>
     <package name="openSUSE-release-mini"/>
@@ -49,18 +51,12 @@
     <package name="sg3_utils"/>
   </packages>
   <packages type="delete">
-    <package name="aaa_base"/>
-    <package name="dbus-1"/>
     <package name="dracut"/>
     <package name="fipscheck"/>
-    <package name="glibc-locale"/>
     <package name="kbd"/>
     <package name="kmod"/>
-    <package name="ncurses-utils"/>
     <package name="pinentry"/>
     <package name="pkg-config"/>
     <package name="sg3_utils"/>
-    <package name="systemd-sysvinit"/>
-    <package name="udev"/>
   </packages>
 </image>
